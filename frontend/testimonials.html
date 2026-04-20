@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Testimonials | Compassionate Child Care Inc</title>
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <!-- NAVBAR -->
+        <header class="navbar">
+            <div class="logo-container">
+                <a href="index.html" class="logo"
+                    >Compassionate Child Care Inc</a
+                >
+                <a href="index.html" class="sub-logo">OVERNIGHT NEWBORN CARE</a>
+            </div>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#how-it-works">How It Works</a>
+                <a href="testimonials.html" class="selected-tab"
+                    >Testimonials</a
+                >
+            </nav>
+
+            <div class="nav-buttons">
+                <a href="request.html" class="btn primary">Request Care</a>
+                <a href="apply.html" class="btn secondary"
+                    >Apply as a Caregiver</a
+                >
+            </div>
+
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+        </header>
+
+        <!-- MOBILE MENU -->
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="index.html#services">Services</a>
+            <a href="index.html#how-it-works">How It Works</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="request.html" class="btn primary full">Request Care</a>
+            <a href="apply.html" class="btn secondary">Apply as a Caregiver</a>
+        </div>
+
+        <!-- HERO -->
+        <section class="section" style="margin-bottom: -50px">
+            <h1 class="form-title">What Families Are Saying</h1>
+            <p class="form-subtitle">
+                Real experiences from families who trust our care.
+            </p>
+        </section>
+
+        <!-- TESTIMONIALS GRID -->
+        <section class="testimonials-container">
+            <div class="testimonial-card">
+                <p class="quote">
+                    “Brooke Patterson is an outstanding childcare provider. She
+                    is conscientious, dedicated, and kind. She patiently
+                    interacts with the children in her care promoting self
+                    esteem while building upon each child's strengths to
+                    facilitate learning and growth.”
+                </p>
+                <div class="author">— Betty C.</div>
+            </div>
+
+            <div class="testimonial-card">
+                <p class="quote">
+                    “Brooke has been an absolute blessing to our family. From
+                    the very beginning she has shwn genuine care, patience, and
+                    dedication in looking after our grand girls. Its clear she
+                    doesnt just see this as a job, she truly invests her heart
+                    in the children she cares for.”
+                </p>
+                <div class="author">— Anonymous</div>
+            </div>
+
+            <div class="testimonial-card">
+                <p class="quote">
+                    “Brooke has been watching my kids for nearly a year and at
+                    this point i cant imagine life without her. She keeps out
+                    home life organized while simultaneously being present and
+                    in the moment.”
+                </p>
+                <div class="author">— Christy H..</div>
+            </div>
+
+            <div class="testimonial-card">
+                <p class="quote">
+                    “We finally feel comfortable leaving our kids knowing
+                    they’re in good hands. That peace of mind is everything.”
+                </p>
+                <div class="author">— Lauren K.</div>
+            </div>
+
+            <div class="testimonial-card">
+                <p class="quote">
+                    “Our caregiver has become such a positive presence in our
+                    home. This service made all the difference for our family.”
+                </p>
+                <div class="author">— Amanda T.</div>
+            </div>
+
+            <div class="testimonial-card">
+                <p class="quote">
+                    “From the first interaction, everything felt professional
+                    but still very personal. That’s rare and we really
+                    appreciated it.”
+                </p>
+                <div class="author">— Rachel S.</div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <h2>Ready to Find Care You Can Trust?</h2>
+            <div>
+                <a href="request.html" class="btn primary">Request Care</a>
+                <a href="index.html" class="btn secondary">Back to Home</a>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>© 2026 Compassionate Child Care Inc. All rights reserved.</p>
+        </footer>
+
+        <!-- SCRIPT -->
+        <script>
+            const toggle = document.getElementById("menu-toggle");
+            const menu = document.getElementById("mobile-menu");
+
+            if (toggle && menu) {
+                toggle.addEventListener("click", () => {
+                    menu.classList.toggle("active");
+                });
+            }
+        </script>
+    </body>
+</html>

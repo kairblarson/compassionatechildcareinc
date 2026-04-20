@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apply as a Caregiver</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<!-- LOADER -->
+<div id="loader" class="loader hidden">
+    <div class="spinner"></div>
+    <p>Submitting your application...</p>
+</div>
+
+<!-- TOAST -->
+<div id="toast" class="toast hidden"></div>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo-container">
+        <a href="index.html" class="logo">Compassionate Child Care Inc</a>
+        <a href="index.html" class="sub-logo">OVERNIGHT NEWBORN CARE</a>
+    </div>
+
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#how-it-works">How It Works</a>
+        <a href="testimonials.html">Testimonials</a>
+    </nav>
+
+    <div class="nav-buttons">
+        <a href="request.html" class="btn primary">Request Care</a>
+        <a href="apply.html" class="btn secondary">Apply as a Caregiver</a>
+    </div>
+
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="index.html#services">Services</a>
+    <a href="index.html#how-it-works">How It Works</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="request.html" class="btn primary full">Request Care</a>
+    <a href="apply.html" class="btn secondary">Apply as a Caregiver</a>
+</div>
+
+<!-- HERO -->
+<section class="section" style="margin-bottom: -100px">
+    <h1 class="form-title">Caregiver Application</h1>
+    <p class="form-subtitle">
+        Tell us about your experience so we can connect you with the right families.
+    </p>
+</section>
+
+<!-- FORM -->
+<section class="form-section">
+<form class="care-form" id="applyForm">
+
+    <!-- CONTACT -->
+    <h2>Contact Information</h2>
+
+    <div class="form-group">
+        <input type="text" name="full_name" placeholder="Full Name *" required />
+        <small class="error-message"></small>
+    </div>
+
+    <div class="form-group">
+        <input type="tel" name="phone" placeholder="Phone Number *" required />
+        <small class="error-message"></small>
+    </div>
+
+    <div class="form-group">
+        <input type="email" name="email" placeholder="Email *" required />
+        <small class="error-message"></small>
+    </div>
+
+    <div class="form-group">
+        <input type="text" name="location" placeholder="City / Area Served *" required />
+        <small class="error-message"></small>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <h2>Experience</h2>
+
+    <div class="form-group">
+        <input type="number" name="years_experience" placeholder="Years of childcare experience *" required />
+        <small class="error-message"></small>
+    </div>
+
+    <div class="form-group">
+        <input type="text" name="age_groups" placeholder="Age groups most experienced with *" required />
+        <small class="error-message"></small>
+    </div>
+
+    <div class="form-group">
+        <textarea name="background" placeholder="Briefly describe your childcare background *" required></textarea>
+        <small class="error-message"></small>
+    </div>
+
+    <div class="form-group">
+        <textarea name="style" placeholder="Caregiving style *" required></textarea>
+        <small class="error-message"></small>
+    </div>
+
+    <div class="form-group">
+        <textarea name="enjoyment" placeholder="What do you enjoy most about working with children *" required></textarea>
+        <small class="error-message"></small>
+    </div>
+
+    <div class="form-group">
+        <textarea name="behavior" placeholder="How do you handle challenging behaviors *" required></textarea>
+        <small class="error-message"></small>
+    </div>
+
+    <!-- SKILLS -->
+    <h2>Skills & Preferences</h2>
+
+    <div class="form-group">
+        <textarea name="tasks" placeholder="Comfortable with tasks *" required></textarea>
+        <small class="error-message"></small>
+    </div>
+
+    <div class="form-group">
+        <textarea name="limitations" placeholder="Preferred tasks or limitations *" required></textarea>
+        <small class="error-message"></small>
+    </div>
+
+    <!-- AVAILABILITY -->
+    <h2>Availability</h2>
+
+    <div class="form-group">
+        <input type="text" name="availability" placeholder="Availability *" required />
+        <small class="error-message"></small>
+    </div>
+
+    <div class="form-group">
+        <input type="text" name="work_type" placeholder="Type of work desired *" required />
+        <small class="error-message"></small>
+    </div>
+
+    <div class="form-group">
+        <select name="last_minute" required>
+            <option disabled selected value="">Available for last minute bookings? *</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <small class="error-message"></small>
+    </div>
+
+    <div class="form-group">
+        <select name="transport" required>
+            <option disabled selected value="">Reliable transportation? *</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <small class="error-message"></small>
+    </div>
+
+    <div class="form-group">
+        <select name="travel" required>
+            <option disabled selected value="">Travel to different neighborhoods? *</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <small class="error-message"></small>
+    </div>
+
+    <!-- QUALIFICATIONS -->
+    <h2>Qualifications</h2>
+
+    <div class="form-group">
+        <select name="cpr" required>
+            <option disabled selected value="">CPR / First Aid Certified? *</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <small class="error-message"></small>
+    </div>
+
+    <div class="form-group">
+        <select name="background_check" required>
+            <option disabled selected value="">Consent to background checks? *</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <small class="error-message"></small>
+    </div>
+
+    <div class="form-group">
+        <select name="references" required>
+            <option disabled selected value="">References available? *</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <small class="error-message"></small>
+    </div>
+
+    <!-- FIT -->
+    <h2>Communication & Fit</h2>
+
+    <div class="form-group">
+        <textarea name="communication" placeholder="Communication style *" required></textarea>
+        <small class="error-message"></small>
+    </div>
+
+    <div class="form-group">
+        <textarea name="relationship" placeholder="Great caregiver-family relationship *" required></textarea>
+        <small class="error-message"></small>
+    </div>
+
+    <div class="form-group">
+        <input type="text" name="rate" placeholder="Desired hourly rate *" required />
+        <small class="error-message"></small>
+    </div>
+
+    <div class="form-group">
+        <textarea name="fit" placeholder="Why are you a great fit? *" required></textarea>
+        <small class="error-message"></small>
+    </div>
+
+    <!-- OPTIONAL -->
+    <textarea name="notes" placeholder="Anything else you'd like to share"></textarea>
+
+    <!-- SUBMIT -->
+    <button type="submit" class="btn primary full" id="submit-btn">
+        Submit Application
+    </button>
+
+</form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Compassionate Child Care Inc. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

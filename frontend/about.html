@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About | Compassionate Child Care Inc</title>
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <!-- NAVBAR -->
+        <header class="navbar">
+            <div class="logo-container">
+                <a href="index.html" class="logo"
+                    >Compassionate Child Care Inc</a
+                >
+                <a href="index.html" class="sub-logo">OVERNIGHT NEWBORN CARE</a>
+            </div>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html" class="selected-tab">About</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#how-it-works">How It Works</a>
+                <a href="testimonials.html">Testimonials</a>
+            </nav>
+
+            <div class="nav-buttons">
+                <a href="request.html" class="btn primary">Request Care</a>
+                <a href="apply.html" class="btn secondary"
+                    >Apply as a Caregiver</a
+                >
+            </div>
+
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+        </header>
+
+        <!-- MOBILE MENU -->
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="index.html" class="selected-tab">Home</a>
+            <a href="about.html">About</a>
+            <a href="index.html#services">Services</a>
+            <a href="index.html#how-it-works">How It Works</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="request.html" class="btn primary full">Request Care</a>
+            <a href="apply.html" class="btn secondary">Apply as a Caregiver</a>
+        </div>
+
+        <!-- HERO -->
+        <section class="section" style="margin-bottom: -50px;">
+            <h1 class="form-title">A More Thoughtful Approach to Child Care</h1>
+            <p class="form-subtitle">
+                Built on trust, connection, and care that actually feels right.
+            </p>
+        </section>
+
+        <!-- MAIN STORY -->
+        <section class="about-container">
+            <div class="about-card">
+                <p class="about-intro">
+                    Hi, I'm Brooke — the person behind this platform!
+                </p>
+
+                <p>
+                    I created this space to make finding childcare feel simple,
+                    safe, and genuinely stress-free for families, while also
+                    helping great caregivers connect with the right
+                    opportunities.
+                </p>
+
+                <p>
+                    After working closely with families, I saw how important it
+                    is to have someone you truly trust in your home. Someone who
+                    not only shows up, but connects, communicates, and really
+                    cares.
+                </p>
+
+                <p>
+                    I also saw how many amazing caregivers were looking for
+                    families who value what they do.
+                </p>
+
+                <p>
+                    I wanted to create something that brings both sides together
+                    in a way that feels more personal, reliable, and
+                    intentional.
+                </p>
+
+                <p>
+                    Whether you're a parent looking for dependable care or a
+                    caregiver searching for the right fit, my goal is to make
+                    this process feel easy, supportive, and something you can
+                    feel good about.
+                </p>
+
+                <p>
+                    This is something I genuinely care about, and I'm committed
+                    to building a space people can trust.
+                </p>
+            </div>
+        </section>
+
+        <!-- VALUES -->
+        <section class="section light">
+            <h2>What You Can Expect</h2>
+
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Trust First</h3>
+                    <p>
+                        Every match is made with care, because who you invite
+                        into your home matters.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Thoughtful Matching</h3>
+                    <p>
+                        It’s not just about availability — it’s about finding
+                        the right fit for your family.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Genuine Care</h3>
+                    <p>
+                        We prioritize caregivers who are not only experienced,
+                        but truly compassionate.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <h2>Find Care You Can Feel Good About</h2>
+            <div>
+                <a href="request.html" class="btn primary">Request Care</a>
+                <a href="index.html" class="btn secondary">Back to Home</a>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>© 2026 Compassionate Child Care Inc. All rights reserved.</p>
+        </footer>
+
+        <!-- SCRIPT -->
+        <script>
+            const toggle = document.getElementById("menu-toggle");
+            const menu = document.getElementById("mobile-menu");
+
+            if (toggle && menu) {
+                toggle.addEventListener("click", () => {
+                    menu.classList.toggle("active");
+                });
+            }
+        </script>
+    </body>
+</html>
