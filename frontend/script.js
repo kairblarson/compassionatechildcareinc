@@ -223,7 +223,11 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         emailjs
-            .send("service_onghhm7", "template_v1lzkwq", templateParams)
+            .send(
+                "service_onghhm7",
+                isCareForm ? "template_v1lzkwq" : "template_spb8d4s",
+                templateParams
+            )
             .then(() => {
                 hideLoader();
                 showToast(

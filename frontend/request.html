@@ -1,175 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Request Care</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Request | Compassionate Child Care Inc.</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="styles.css" />
-</head>
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap"
+            rel="stylesheet"
+        />
 
-<!-- LOADER -->
-<div id="loader" class="loader hidden">
-    <div class="spinner"></div>
-    <p>Sending your request...</p>
-</div>
+        <!-- External CSS -->
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon.png" />
+    </head>
 
-<!-- TOAST -->
-<div id="toast" class="toast hidden"></div>
+    <!-- LOADER -->
+    <div id="loader" class="loader hidden">
+        <div class="spinner"></div>
+        <p>Sending your request...</p>
+    </div>
 
-<body>
-    <!-- NAVBAR -->
-    <header class="navbar">
-        <div class="logo-container">
-            <a href="index.html" class="logo">Compassionate Child Care Inc</a>
-            <a href="index.html" class="sub-logo">OVERNIGHT NEWBORN CARE</a>
-        </div>
+    <!-- TOAST -->
+    <div id="toast" class="toast hidden"></div>
 
-        <nav class="nav-links">
+    <body>
+        <!-- NAVBAR -->
+        <header class="navbar">
+            <div class="logo-container">
+                <a href="index.html" class="logo"
+                    >Compassionate Child Care Inc</a
+                >
+                <a href="index.html" class="sub-logo">OVERNIGHT NEWBORN CARE</a>
+            </div>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#how-it-works">How It Works</a>
+                <a href="testimonials.html">Testimonials</a>
+            </nav>
+
+            <div class="nav-buttons">
+                <a href="request.html" class="btn primary">Request Care</a>
+                <a href="apply.html" class="btn secondary"
+                    >Apply as a Caregiver</a
+                >
+            </div>
+
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+        </header>
+
+        <!-- MOBILE MENU -->
+        <div class="mobile-menu" id="mobile-menu">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="index.html#services">Services</a>
             <a href="index.html#how-it-works">How It Works</a>
             <a href="testimonials.html">Testimonials</a>
-        </nav>
-
-        <div class="nav-buttons">
-            <a href="request.html" class="btn primary">Request Care</a>
+            <a href="request.html" class="btn primary full">Request Care</a>
             <a href="apply.html" class="btn secondary">Apply as a Caregiver</a>
         </div>
 
-        <div class="menu-toggle" id="menu-toggle">☰</div>
-    </header>
+        <!-- HERO -->
+        <section class="section" style="margin-bottom: -100px">
+            <h1 class="form-title">Request Child Care</h1>
+            <p class="form-subtitle">
+                Tell us about your family so we can match you with the perfect
+                caregiver.
+            </p>
+        </section>
 
-    <!-- MOBILE MENU -->
-    <div class="mobile-menu" id="mobile-menu">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="index.html#services">Services</a>
-        <a href="index.html#how-it-works">How It Works</a>
-        <a href="testimonials.html">Testimonials</a>
-        <a href="request.html" class="btn primary full">Request Care</a>
-        <a href="apply.html" class="btn secondary">Apply as a Caregiver</a>
-    </div>
+        <!-- FORM -->
+        <section class="form-section">
+            <form class="care-form" id="careForm">
+                <!-- CONTACT -->
+                <h2>Contact Information</h2>
 
-    <!-- HERO -->
-    <section class="section" style="margin-bottom: -100px">
-        <h1 class="form-title">Request Child Care</h1>
-        <p class="form-subtitle">
-            Tell us about your family so we can match you with the perfect caregiver.
-        </p>
-    </section>
+                <div class="form-group">
+                    <input
+                        type="text"
+                        name="parent_name"
+                        placeholder="Parent/Guardian Name *"
+                        required
+                    />
+                    <small class="error-message"></small>
+                </div>
 
-    <!-- FORM -->
-    <section class="form-section">
-        <form class="care-form" id="careForm">
+                <div class="form-group">
+                    <input
+                        type="tel"
+                        name="phone"
+                        placeholder="Phone Number *"
+                        required
+                    />
+                    <small class="error-message"></small>
+                </div>
 
-            <!-- CONTACT -->
-            <h2>Contact Information</h2>
+                <div class="form-group">
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Email Address *"
+                        required
+                    />
+                    <small class="error-message"></small>
+                </div>
 
-            <div class="form-group">
-                <input type="text" name="parent_name" placeholder="Parent/Guardian Name *" required />
-                <small class="error-message"></small>
-            </div>
+                <input
+                    type="text"
+                    name="zip"
+                    placeholder="Neighborhood / Zip Code"
+                />
 
-            <div class="form-group">
-                <input type="tel" name="phone" placeholder="Phone Number *" required />
-                <small class="error-message"></small>
-            </div>
+                <!-- CHILD -->
+                <h2>Child Information</h2>
 
-            <div class="form-group">
-                <input type="email" name="email" placeholder="Email Address *" required />
-                <small class="error-message"></small>
-            </div>
+                <div class="form-group">
+                    <input
+                        type="number"
+                        name="num_children"
+                        placeholder="Number of Children *"
+                        required
+                    />
+                    <small class="error-message"></small>
+                </div>
 
-            <input type="text" name="zip" placeholder="Neighborhood / Zip Code" />
+                <input type="text" name="ages" placeholder="Ages of Children" />
 
-            <!-- CHILD -->
-            <h2>Child Information</h2>
+                <textarea
+                    name="child_details"
+                    placeholder="Children's personalities, allergies, or medical needs"
+                ></textarea>
 
-            <div class="form-group">
-                <input type="number" name="num_children" placeholder="Number of Children *" required />
-                <small class="error-message"></small>
-            </div>
+                <!-- CARE -->
+                <h2>Care Details</h2>
 
-            <input type="text" name="ages" placeholder="Ages of Children" />
+                <div class="form-group">
+                    <input
+                        type="text"
+                        name="care_type"
+                        placeholder="Type of care needed *"
+                        required
+                    />
+                    <small class="error-message"></small>
+                </div>
 
-            <textarea name="child_details" placeholder="Children's personalities, allergies, or medical needs"></textarea>
+                <div class="form-group">
+                    <input
+                        type="text"
+                        name="schedule"
+                        placeholder="Days / Times Needed *"
+                        required
+                    />
+                    <small class="error-message"></small>
+                </div>
 
-            <!-- CARE -->
-            <h2>Care Details</h2>
+                <div class="form-group">
+                    <label>Start Date *</label>
+                    <input type="date" name="start_date" required />
+                    <small class="error-message"></small>
+                </div>
 
-            <div class="form-group">
-                <input type="text" name="care_type" placeholder="Type of care needed *" required />
-                <small class="error-message"></small>
-            </div>
+                <input
+                    type="number"
+                    name="hours"
+                    placeholder="Average Hours per Visit"
+                />
 
-            <div class="form-group">
-                <input type="text" name="schedule" placeholder="Days / Times Needed *" required />
-                <small class="error-message"></small>
-            </div>
+                <!-- EXPECTATIONS -->
+                <h2>Expectations & Preferences</h2>
 
-            <div class="form-group">
-                <label>Start Date *</label>
-                <input type="date" name="start_date" required />
-                <small class="error-message"></small>
-            </div>
+                <textarea
+                    name="expectations"
+                    placeholder="Caregiver expectations"
+                ></textarea>
+                <textarea
+                    name="responsibilities"
+                    placeholder="Additional responsibilities"
+                ></textarea>
+                <textarea
+                    name="traits"
+                    placeholder="Ideal caregiver traits"
+                ></textarea>
 
-            <input type="number" name="hours" placeholder="Average Hours per Visit" />
+                <input
+                    type="text"
+                    name="communication"
+                    placeholder="Preferred communication style"
+                />
+                <input
+                    type="text"
+                    name="comfort"
+                    placeholder="Comfort preferences while away"
+                />
 
-            <!-- EXPECTATIONS -->
-            <h2>Expectations & Preferences</h2>
+                <!-- BUDGET -->
+                <h2>Budget & Experience</h2>
 
-            <textarea name="expectations" placeholder="Caregiver expectations"></textarea>
-            <textarea name="responsibilities" placeholder="Additional responsibilities"></textarea>
-            <textarea name="traits" placeholder="Ideal caregiver traits"></textarea>
+                <input
+                    type="text"
+                    name="budget"
+                    placeholder="Investment range for childcare"
+                />
 
-            <input type="text" name="communication" placeholder="Preferred communication style" />
-            <input type="text" name="comfort" placeholder="Comfort preferences while away" />
+                <div class="form-group">
+                    <label>
+                        Are you open to adjusting rates based on
+                        experience/responsibility? *
+                    </label>
+                    <select name="flexible" required>
+                        <option disabled selected value="">
+                            -- Select an Option --
+                        </option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                    <small class="error-message"></small>
+                </div>
 
-            <!-- BUDGET -->
-            <h2>Budget & Experience</h2>
+                <textarea
+                    name="experience"
+                    placeholder="Have you worked with a caregiver before?"
+                ></textarea>
 
-            <input type="text" name="budget" placeholder="Investment range for childcare" />
+                <!-- FINAL -->
+                <h2>Final Details</h2>
 
-            <div class="form-group">
-                <label>
-                    Are you open to adjusting rates based on experience/responsibility? *
-                </label>
-                <select name="flexible" required>
-                    <option disabled selected value="">-- Select an Option --</option>
-                    <option value="Yes">Yes</option>
-                    <option value="No">No</option>
-                </select>
-                <small class="error-message"></small>
-            </div>
+                <input
+                    type="text"
+                    name="referral"
+                    placeholder="How did you hear about us?"
+                />
 
-            <textarea name="experience" placeholder="Have you worked with a caregiver before?"></textarea>
+                <textarea
+                    name="success"
+                    placeholder="What does a successful childcare experience look like?"
+                ></textarea>
 
-            <!-- FINAL -->
-            <h2>Final Details</h2>
+                <textarea
+                    name="notes"
+                    placeholder="Anything else you'd like to share?"
+                ></textarea>
 
-            <input type="text" name="referral" placeholder="How did you hear about us?" />
+                <!-- SUBMIT -->
+                <button type="submit" class="btn primary full" id="submit-btn">
+                    Submit Request
+                </button>
+            </form>
+        </section>
 
-            <textarea name="success" placeholder="What does a successful childcare experience look like?"></textarea>
+        <!-- FOOTER -->
+        <footer>
+            <p>© 2026 Compassionate Child Care Inc. All rights reserved.</p>
+        </footer>
+    </body>
 
-            <textarea name="notes" placeholder="Anything else you'd like to share?"></textarea>
-
-            <!-- SUBMIT -->
-            <button type="submit" class="btn primary full" id="submit-btn">
-                Submit Request
-            </button>
-
-        </form>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2026 Compassionate Child Care Inc. All rights reserved.</p>
-    </footer>
-</body>
-
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
 </html>

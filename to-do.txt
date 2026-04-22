@@ -1,8 +1,6 @@
-1. Make the menu buttons do something
-2. Make an actual about page
 3. get real testimonials
 4. make an application page
 5. have request care form be sent to brooke via email
 6. have application page be sent to brooke via email
-7. include her logo somewhere
+7. include her logo somewhere => put it on the index page at the top?
 8. get the url she wants
