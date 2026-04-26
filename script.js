@@ -226,14 +226,14 @@ document.addEventListener("DOMContentLoaded", function () {
             .send(
                 "service_onghhm7",
                 isCareForm ? "template_v1lzkwq" : "template_spb8d4s",
-                templateParams
+                templateParams,
             )
             .then(() => {
                 hideLoader();
                 showToast(
                     isCareForm
                         ? "Request sent successfully! 🎉"
-                        : "Application submitted successfully! 🎉"
+                        : "Application submitted successfully! 🎉",
                 );
                 form.reset();
             })
@@ -271,5 +271,45 @@ document.querySelectorAll('a[href*="#"]').forEach((anchor) => {
             const menu = document.getElementById("mobile-menu");
             if (menu) menu.classList.remove("active");
         }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("mobile-menu");
+
+    // Create overlay dynamically (since your HTML doesn’t have one)
+    const overlay = document.createElement("div");
+    overlay.classList.add("overlay");
+    document.body.appendChild(overlay);
+
+    if (!toggle || !menu) {
+        console.error("Menu elements not found");
+        return;
+    }
+
+    function openMenu() {
+        menu.classList.add("open");
+        overlay.classList.add("show");
+    }
+
+    function closeMenu() {
+        menu.classList.remove("open");
+        overlay.classList.remove("show");
+    }
+
+    toggle.addEventListener("click", function () {
+        if (menu.classList.contains("open")) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
+    });
+
+    overlay.addEventListener("click", closeMenu);
+
+    // Close when clicking links
+    document.querySelectorAll("#mobile-menu a").forEach((link) => {
+        link.addEventListener("click", closeMenu);
     });
 });

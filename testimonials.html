@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -12,7 +12,7 @@
         />
 
         <!-- External CSS -->
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="styles.css?vers=5" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
         <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
@@ -22,42 +22,49 @@
     <body>
         <!-- NAVBAR -->
         <header class="navbar">
-            <div class="logo-container">
-                <a href="index.html" class="logo"
-                    >Compassionate Child Care Inc</a
-                >
-                <a href="index.html" class="sub-logo">OVERNIGHT NEWBORN CARE</a>
-            </div>
+            <span>
+                <div class="logo-container">
+                    <a href="index.html" class="logo"
+                        >Compassionate Child Care Inc</a
+                    >
+                    <a href="index.html" class="sub-logo"
+                        >OVERNIGHT NEWBORN CARE</a
+                    >
+                </div>
 
-            <nav class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="index.html#services">Services</a>
-                <a href="index.html#how-it-works">How It Works</a>
-                <a href="testimonials.html" class="selected-tab"
-                    >Testimonials</a
-                >
-            </nav>
+                <nav class="nav-links">
+                    <a href="index.html" class="selected-tab">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="index.html#services">Services</a>
+                    <a href="index.html#how-it-works">How It Works</a>
+                    <a href="testimonials.html">Testimonials</a>
+                </nav>
 
-            <div class="nav-buttons">
-                <a href="request.html" class="btn primary">Request Care</a>
-                <a href="apply.html" class="btn secondary"
-                    >Apply as a Caregiver</a
-                >
-            </div>
+                <div class="nav-buttons">
+                    <a href="request.html" class="btn primary">Request Care</a>
+                    <a href="apply.html" class="btn secondary"
+                        >Apply as a Caregiver</a
+                    >
+                </div>
+            </span>
 
             <div class="menu-toggle" id="menu-toggle">☰</div>
         </header>
 
         <!-- MOBILE MENU -->
         <div class="mobile-menu" id="mobile-menu">
-            <a href="index.html">Home</a>
+            <a href="index.html" class="selected-tab">Home</a>
             <a href="about.html">About</a>
             <a href="index.html#services">Services</a>
             <a href="index.html#how-it-works">How It Works</a>
             <a href="testimonials.html">Testimonials</a>
             <a href="request.html" class="btn primary full">Request Care</a>
-            <a href="apply.html" class="btn secondary">Apply as a Caregiver</a>
+            <a
+                href="apply.html"
+                class="btn secondary full"
+                style="margin-top: -10px"
+                >Apply as a Caregiver</a
+            >
         </div>
 
         <!-- HERO -->
@@ -105,9 +112,9 @@
             <div class="testimonial-card">
                 <p class="quote">
                     “We finally feel comfortable leaving our kids knowing
-                    they’re in good hands. That peace of mind is everything.”
+                    they're in good hands. That peace of mind is everything.”
                 </p>
-                <div class="author">— Lauren K.</div>
+                <div class="author">— (NOT REAL).</div>
             </div>
 
             <div class="testimonial-card">
@@ -115,16 +122,16 @@
                     “Our caregiver has become such a positive presence in our
                     home. This service made all the difference for our family.”
                 </p>
-                <div class="author">— Amanda T.</div>
+                <div class="author">— (NOT REAL).</div>
             </div>
 
             <div class="testimonial-card">
                 <p class="quote">
                     “From the first interaction, everything felt professional
-                    but still very personal. That’s rare and we really
+                    but still very personal. That's rare and we really
                     appreciated it.”
                 </p>
-                <div class="author">— Rachel S.</div>
+                <div class="author">— (NOT REAL).</div>
             </div>
         </section>
 
@@ -154,4 +161,5 @@
             }
         </script>
     </body>
+    <script src="script.js?vers=5"></script>
 </html>
