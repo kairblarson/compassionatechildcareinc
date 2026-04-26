@@ -292,6 +292,26 @@ select {
     color: white;
 }
 
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    /* .navbar {
+        flex-direction: column;
+        gap: 15px;
+    } */
+}
+
 /* NAVBAR BASE */
 .navbar {
     display: flex;
