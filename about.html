@@ -12,7 +12,7 @@
         />
 
         <!-- External CSS -->
-        <link rel="stylesheet" href="styles.css?vers=5" />
+        <link rel="stylesheet" href="styles.css?vers=6" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
         <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
@@ -24,12 +24,13 @@
         <header class="navbar">
             <span>
                 <div class="logo-container">
-                    <a href="index.html" class="logo"
+                    <!-- <a href="index.html" class="logo"
                         >Compassionate Child Care Inc</a
                     >
                     <a href="index.html" class="sub-logo"
                         >OVERNIGHT NEWBORN CARE</a
-                    >
+                    > -->
+                    <img src="images/ccc_logo_v4.png" class="logo" />
                 </div>
 
                 <nav class="nav-links">
@@ -77,11 +78,45 @@
 
         <!-- MAIN STORY -->
         <section class="about-container">
-            <div class="about-card">
-                <p class="about-intro">
-                    Hi, I'm Brooke — the person behind this platform!
-                </p>
+            <!-- <div class="about-img-card">
+                <img src="images/brooke.jpg" class="about-img" />
+            </div> -->
+            <img src="images/brooke.jpg" class="about-img" />
 
+            <div class="about-card">
+                <p
+                    class="about-intro"
+                    style="color: #b09380; margin-bottom: 0px"
+                >
+                    HI, IM BROOKE
+                </p>
+                <h2
+                    style="
+                        font-size: 50px;
+                        line-height: 70px;
+                        position: relative;
+                    "
+                >
+                    The person behind this platform.
+                    <img
+                        src="images/heart_icon.png"
+                        style="
+                            height: 60px;
+                            position: absolute;
+                            right: 50px;
+                            bottom: 0px;
+                        "
+                    />
+                </h2>
+                <div
+                    style="
+                        height: 2px;
+                        width: 100px;
+                        background-color: #b09380;
+                        margin-top: -30px;
+                        margin-bottom: 20px;
+                    "
+                ></div>
                 <p>
                     I created this space to make finding childcare feel simple,
                     safe, and genuinely stress-free for families, while also
@@ -127,27 +162,42 @@
 
             <div class="grid-3">
                 <div class="card">
-                    <h3>Trust First</h3>
-                    <p>
-                        Every match is made with care, because who you invite
-                        into your home matters.
-                    </p>
+                    <div class="about-icon-container">
+                        <img src="images/security_v2.png" class="about-icon" />
+                    </div>
+                    <div class="about-icon-text">
+                        <h3>Trust First</h3>
+                        <p style="text-align: start;">
+                            Every match is made with care, because who you
+                            invite into your home matters.
+                        </p>
+                    </div>
                 </div>
 
                 <div class="card">
-                    <h3>Thoughtful Matching</h3>
-                    <p>
-                        It’s not just about availability — it’s about finding
-                        the right fit for your family.
-                    </p>
+                    <div class="about-icon-container">
+                        <img src="images/calendar_v2.png" class="about-icon" />
+                    </div>
+                    <div class="about-icon-text">
+                        <h3>Thoughtful Matching</h3>
+                        <p style="text-align: start;">
+                            It’s not just about availability — it’s about
+                            finding the right fit for your family.
+                        </p>
+                    </div>
                 </div>
 
                 <div class="card">
-                    <h3>Genuine Care</h3>
-                    <p>
-                        We prioritize caregivers who are not only experienced,
-                        but truly compassionate.
-                    </p>
+                    <div class="about-icon-container">
+                        <img src="images/heart_v2.png" class="about-icon" />
+                    </div>
+                    <div class="about-icon-text">
+                        <h3>Genuine Care</h3>
+                        <p style="text-align: start;">
+                            We prioritize caregivers who are not only
+                            experienced, but truly compassionate.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -177,6 +227,6 @@
                 });
             }
         </script>
-    <script src="script.js?vers=5"></script>
+        <script src="script.js?vers=5"></script>
     </body>
 </html>
