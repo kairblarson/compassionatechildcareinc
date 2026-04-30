@@ -45,9 +45,6 @@ body {
     gap: 10px;
 }
 
-.about-img-card {
-}
-
 .about-icon-container {
     background: #dce6f2;
     padding: 20px;
@@ -63,8 +60,14 @@ body {
     height: 50px;
 }
 
+.about-img-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .about-img {
-    background: white;
     border-radius: 14px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
     line-height: 1.7;
@@ -347,6 +350,11 @@ select {
 
     .hero h1 {
         font-size: 36px;
+    }
+
+    .about-img {
+        width: 90%;
+        object-fit: cover;
     }
 
     /* .navbar {
