@@ -46,7 +46,6 @@ body {
 }
 
 .about-img-card {
-
 }
 
 .about-icon-container {
@@ -71,7 +70,7 @@ body {
     line-height: 1.7;
     height: 600px;
 }
-  
+
 /* HERO */
 .hero {
     text-align: center;
@@ -145,13 +144,19 @@ h2 {
     flex-direction: row;
     gap: 20px;
 }
+.home-card {
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
 
-.card ul {
+.home-card ul {
     list-style: none;
     margin-top: 10px;
 }
 
-.card ul li {
+.home-card ul li {
     margin: 5px 0;
 }
 
@@ -742,7 +747,6 @@ section {
         flex-direction: row;
     }
 }
-
 
 .gold-break {
     height: 2px;
