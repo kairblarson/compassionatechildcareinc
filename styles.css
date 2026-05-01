@@ -821,6 +821,17 @@ section {
     font-style: italic;
 }
 
+input[type="date"] {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    appearance: none;
+    padding: 12px 14px;
+    font-size: 16px;
+}
+
 /* Mobile */
 @media (max-width: 900px) {
     .pricing-grid {
