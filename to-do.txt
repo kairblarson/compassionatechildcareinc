@@ -1,4 +1,4 @@
 3. get more real testimonials
 5. have request care form be sent to brooke via email
 6. have application page be sent to brooke via email
-8. get the url she wants
+7. hover the right menu item when on the page
