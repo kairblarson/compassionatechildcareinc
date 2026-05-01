@@ -61,7 +61,7 @@ body {
 }
 
 .about-img-card {
-    width: 100%;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -869,6 +869,9 @@ input[type="date"] {
     .navbar {
         display: flex;
         flex-direction: row;
+    }
+    .about-img-card {
+        width: 100%;
     }
 }
 
