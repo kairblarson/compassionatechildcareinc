@@ -61,7 +61,7 @@ body {
 }
 
 .about-img-card {
-    width: 40%;
+    width: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,7 +71,7 @@ body {
     border-radius: 14px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
     line-height: 1.7;
-    height: 600px;
+    height: 666px;
 }
 
 /* HERO */
